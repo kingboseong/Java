@@ -1,0 +1,16 @@
+package com.ruby.java.ch14;
+
+public class Test14 {
+	
+	public static void main(String[] args) {
+		Function<Stirng, Integer>func = (s) -> {
+			int cnt = 0;
+			String[] word = s.split(" ");
+			cnt = word.lrngth;
+			return cnt;
+		};
+		
+		int wordCnt = func.apply("고개를 들어 별들을 보라 달신 발만 내다 보지말고");
+		System.out.println("단어 수 : " + wordCnt);
+	}
+}

@@ -1,0 +1,22 @@
+package Qize;
+
+import java.util.Scanner;
+
+public class PrimeNumber2 {
+
+	Scanner sc = new Scanner(System.in);System.out.println("입력 자릿수 :");
+	long st = sc.nextInt();
+
+	for(
+	int i = 2;i<st;i++)
+	{
+		if (st % i == 0) {
+			System.out.println("소수가 아닙니다.");
+			break;
+		} else {
+			System.out.println("소수라고 하옵니다.");
+			break;
+		}
+	}
+
+}

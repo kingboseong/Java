@@ -1,0 +1,22 @@
+package Qize;
+
+class Geometry {
+}
+
+class Circle extends Geometry {
+	int radius;
+}
+
+class Rectangle extends Geometry {
+	int width;
+	int height;
+}
+
+class Triangle extends Geometry {
+	int width;
+	int height;
+}
+
+public class GeometryTest {
+
+}

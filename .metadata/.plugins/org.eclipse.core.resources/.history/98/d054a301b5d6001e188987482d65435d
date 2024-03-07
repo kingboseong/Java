@@ -1,0 +1,28 @@
+package Qize;
+
+import java.util.Scanner;
+
+public class PrimeNumber2 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("num : ");
+		long num = sc.nextInt();
+
+		int s = (int) Math.pow(10.0, (double) (num - 1));
+		int e = (int) Math.pow(10.0, (double) (num)) - 1;
+
+		for (int i = 2; i < num; i++) {
+			if (s % i == 0) {
+				System.out.println("소수가 아닙니다.");
+				break;
+			}else if(){
+				System.out.println("소수라고 하옵니다.");
+				break;
+			}
+		}
+
+	}
+
+}

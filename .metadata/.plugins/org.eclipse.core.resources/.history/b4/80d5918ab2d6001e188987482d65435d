@@ -1,0 +1,13 @@
+package Qize;
+
+public class PrimeNumber2 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자 입력 : ");
+		int score = sc.nextInt();
+				
+	}
+	
+}

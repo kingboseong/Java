@@ -1,0 +1,29 @@
+package Qize;
+
+import java.util.Scanner;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+
+		// 정수의 자릿수를 입력 받아서 해당 자릿수에 속하는 소수를 찾아서 출력하는 프로그램을 작성해 보세요
+
+		// 예
+		// 입력 자릿수가 3이면 3자릿수 정수 (100~999) 중에서 소수에 해당하는 숫자를 찾아서 출력한다.
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("입력 자릿수 :");
+		int st = sc.nextInt();
+
+		for (int i = 2; i < st; i++) {
+			if (st % i == 0) {
+				System.out.println("소수가 아닙니다.");
+				break;
+			} else {
+				System.out.println("소수라고 하옵니다.");
+				break;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,10 @@
+package Qize;
+
+public class Gugudan2 {
+//모든 구구단 일렬로 출력
+	public void printHorizontal() {
+		
+		
+	}
+		
+}

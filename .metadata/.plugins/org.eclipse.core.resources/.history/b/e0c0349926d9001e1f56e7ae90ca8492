@@ -1,0 +1,33 @@
+package Qize;
+
+import java.util.Scanner;
+
+public class PrimeNumber2 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("num : ");
+		int num = sc.nextInt();
+
+		int s = (int) Math.pow(10.0, (double) (num - 1));
+		int e = (int) Math.pow(10.0, (double) (num)) - 1;
+
+//		for (int i = s; i < e; i++)
+//			for (int j = 2; j < i; j++)
+//				if ((i % j) == 1 && (i % j) == i)
+//					System.out.println(i);
+
+		boolean check;
+
+		for (int i = s; i < e; i++) {
+			check = true;
+			for (int j = 2; j < i; j++) {
+				if (i % j == 0) check = false;
+			}
+			if (check) {
+				System.out.println(i);
+			}
+		}
+	}
+}

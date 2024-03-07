@@ -1,0 +1,26 @@
+package Qize;
+
+import java.util.Scanner;
+
+public class Gugudan {
+
+	public void print(int i) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("출력하고자 하는 구구단을 입력하세요 : ");
+		int score = sc.nextInt();
+//		System.out.println(i + "단");
+		// i 구구단 출력 시작
+		
+		if(2<=score & score<=9) {
+			for(int j = 1; j<=9; j++) {
+				int m = 0;
+				m = score*j;
+				System.out.print(score + "*" + j + "=" +  m);
+
+				// i 구구단 출력 끝
+				System.out.print("\t");
+			} 
+		}else
+		System.out.println("구구단이 아닙니다유");
+	}
+}
