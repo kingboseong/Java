@@ -63,7 +63,6 @@ class LinkedList1 {
 			q.link = newNode;
 			newNode.link = p;
 		}
-
 	}
 
 //				} else if (element < p.data) {
@@ -81,7 +80,7 @@ class LinkedList1 {
 //				}else if(element값이 기존 노드값과 같을 때){
 //						
 //					}
-//				} 
+//				}
 
 	/*
 	 * 일반적이지 않음. if (element > p.data) { p.link = temp; } else { temp.link = p;

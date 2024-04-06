@@ -229,9 +229,9 @@ class ObjectQueue5 {
 }
 
 class Tree5 {
-	TreeNode5 root; // TreeNode5라는 형태의 root라는 변수생성
+	TreeNode5 root; // TreeNode5라는 형태의 root 라는 변수생성
 
-	Tree5() { // root는 null
+	Tree5() { // root 는 null
 		root = null;
 	}
 
@@ -289,7 +289,7 @@ class Tree5 {
 	}
 
 	void NonrecInorder()// void Tree5::inorder(TreeNode5 *CurrentNode)와 비교
-	// stack을 사용한 inorder 출력
+	// stack 을 사용한 inorder 출력
 	{
 		ObjectStack5 s = new ObjectStack5(20);
 		TreeNode5 CurrentNode = root;
@@ -312,7 +312,7 @@ class Tree5 {
 		}
 	}
 
-	void levelOrder() // level 별로 출력한다. level이 증가하면 다음줄에 출력한다
+	void levelOrder() // level 별로 출력한다. level 이 증가하면 다음줄에 출력한다
 	// 난이도: 최상급 구현
 	{
 		ObjectQueue5 q = new ObjectQueue5(20);
@@ -323,16 +323,16 @@ class Tree5 {
 		newLevel = que.remove();
 	}
 
-	boolean insert(int x) {// binary search tree를 만드는 입력 : left subtree < 노드 x < right subtree
-		// inorder traversal시에 정렬된 결과가 나와야 한다./pdf파일 참고
+	boolean insert(int x) {// binary search tree 를 만드는 입력 : left subtree < 노드 x < right subtree
+		// inorder traversal 시에 정렬된 결과가 나와야 한다./pdf 파일 참고
 		TreeNode5 p = root;
 		TreeNode5 q = null;
 
 		return true;
 	}
 
-	boolean delete(int num) {// binary search tree에서 임의 값을 갖는 노드를 찾아 삭제한다.
-		// 삭제 대상이 leaf node인 경우, non-leaf node로 구분하여 구현한다
+	boolean delete(int num) {// binary search tree 에서 임의 값을 갖는 노드를 찾아 삭제한다.
+		// 삭제 대상이 leaf node 인 경우, non-leaf node 로 구분하여 구현한다
 		TreeNode5 p = root, q = null, parent = null;
 		int branchMode = 0; // 1은 left, 2는 right
 		if (root == null)
@@ -342,7 +342,7 @@ class Tree5 {
 
 	}
 
-	boolean search(int num) {// num 값을 binary search tree에서 검색
+	boolean search(int num) {// num 값을 binary search tree 에서 검색
 		TreeNode5 p = root;
 
 	}
@@ -355,7 +355,7 @@ public class 실습9_1정수이진트리_test {
 
 		private final String message; // 표시할 문자열
 
-		static Menu MenuAt(int idx) { // 순서가 idx번째인 열거를 반환
+		static Menu MenuAt(int idx) { // 순서가 idx 번째인 열거를 반환
 			for (Menu m : Menu.values())
 				if (m.ordinal() == idx)
 					return m;
@@ -446,7 +446,7 @@ public class 실습9_1정수이진트리_test {
 				t.preorder();
 				System.out.println();
 				break;
-			case PostorderPrint:// postfix로 출력
+			case PostorderPrint:// postfix 로 출력
 				t.postorder();
 				System.out.println();
 				break;
